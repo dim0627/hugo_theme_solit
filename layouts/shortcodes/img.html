@@ -1,10 +1,12 @@
-<figure class="p-box{{ if .get "class" }} {{ .Get "class" }}{{ end }}">
+<figure{{ if .Get "class" }} class="{{ .Get "class" }}"{{ end }}>
   <amp-img src="{{ .Get "src" }}" alt="{{ .Page.Title }} {{ .Get "src" }}" width={{ .Get "w" | default "640" }} height={{ .Get "h" | default "400"}} layout="responsive"></amp-img>
   {{ if .Get "caption" }}
-  {{ if .Get "href" }}
-  <figcaption><a href="{{ .Get "href" }}" target="_blank">{{ .Get "caption" }}</a></figcaption>
-  {{ else }}
-  <figcaption>{{ .Get "caption" }}</figcaption>
-  {{ end }}
+  <figcaption>
+    {{ if .Get "href" }}
+    <a href="{{ .Get "href" }}" target="_blank">{{ .Get "caption" }}</a>
+    {{ else }}
+    {{ .Get "caption" }}
+    {{ end }}
+  </figcaption>
   {{ end }}
 </figure>

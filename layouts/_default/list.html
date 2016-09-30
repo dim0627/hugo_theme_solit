@@ -11,8 +11,10 @@
   {{ end }}
 
   <ul class="p-articles">
-    {{ range .Data.Pages }}<li>{{ .Render "li" }}</li>{{ end }}
+    {{ range .Paginator.Pages }}<li>{{ .Render "li" }}</li>{{ end }}
   </ul>
 </div>
+
+{{ partial "pagination.html" . }}
 {{ end }}
 

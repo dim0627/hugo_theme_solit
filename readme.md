@@ -1,25 +1,39 @@
-![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/screenshot.png)
-
 # What is this.
 
 This is the theme for Hugo that supports the [Accelerated Mobile Pages Project](https://www.ampproject.org/).
 
 [Hugo :: A fast and modern static website engine](https://gohugo.io/)
 
+## PC View
+
+![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/screenshot.png)
+
+## SP View(Responsive)
+
+![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/responsive.png)
+
+## Article footer
+
+![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/taxonomy.png)
+
+## AMP suported
+
+![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/amp-valid.png)
+
 # Features
 
-* [Accelerated Mobile Pages Project](https://www.ampproject.org/) a.k.a AMP supported.
-* Responsive Design
-* Google Analytics.
-* Thumbnail.
+* [Accelerated Mobile Pages Project](https://www.ampproject.org/) a.k.a AMP supported
+* Responsive design
+* Google Analytics
+* Thumbnail
 * High score by Google Page Speed Insight.
-* Share button.
-* Structured data(Article and Breadcrumb).
-* Twitter cards.
+* Share button
+* Structured data(Article and Breadcrumb)
+* Twitter cards
 * OGP
-* Optimized for SEO.
+* Specializing in SEO
 
-# Config example
+# `config.toml` example
 
 ```
 baseurl = "https://example.com/"
@@ -31,7 +45,7 @@ googleAnalytics = "UA-XXXXXXXX-XX" # Optional
   contact = "contact@example.com" # Optional
   # Fonts settings.
   googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
-  fontfamily = "Lato,游ゴシック体,'Yu Gothic',YuGothic,'Hiragno Sans','ヒラギノ角ゴシック Pro','Hiragino Kaku Gothic Pro',メイリオ,Meiryo,sans-serif" # Optional, Override body font family.
+  fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
   logofontfamily = "Lobster, cursive" # Optional, Override logo font.
 ```
 
@@ -45,16 +59,16 @@ thumbnail = "thumbnail.jpg" # Optional, referenced at `$HUGO_ROOT/static/images/
 +++
 ```
 
-# Recommends directory structure
+# Recommended directory structure
 
-This themes `Header Menu` is using section.
+This themes `Header Menu` is using `Section`.
 Recommend that you use the section than taxonomy.
 
 ```
 .
 ├── config.toml
 ├── content
-│   ├── section1         # Separated by section.
+│   ├── section1         # Separated by Section.
 │   │   └── article1.md
 │   └── section2
 │       └── article2.md
@@ -82,6 +96,22 @@ Recommend that you use the section than taxonomy.
 {{% img src="/images/image.jpg" w="600" h="400" caption="Referenced from wikipedia." href="https://en.wikipedia.org/wiki/Lorem_ipsum" %}}
 ```
 
+![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/include-images.png)
+
+## Clear
+
+Break float.
+
+```
+{{% img src="/images/image.jpg" w="600" h="400" class="right" %}}
+
+brabrabra # Displayed left of the image.
+
+{{% clear %}}
+
+brabrabra # Displayed below of the image.
+```
+
 ## Twitter
 
 ```
@@ -90,7 +120,7 @@ Recommend that you use the section than taxonomy.
 
 # Development mode
 
-Support development mode.
+Supported development mode.
 
 ```
 env HUGO_ENV="DEV" hugo server --watch --buildDrafts=true --buildFuture=true -t solit
@@ -104,12 +134,10 @@ This mode is
 
 And set `{{ if ne (getenv "HUGO_ENV") "DEV" }} Set elements here. {{ end }}` if you want to place only in a production environment.
 
-## Development shell example.
+## Development mode example
 
 ```
-#!/bin/bash
-
-env HUGO_ENV="DEV" hugo server --watch --buildDrafts=true --buildFuture=true
+env HUGO_ENV="DEV" hugo server --watch --buildDrafts=true --buildFuture=true -t solit
 ```
 
 # Inspired by
