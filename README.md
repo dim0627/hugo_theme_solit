@@ -16,7 +16,7 @@ This is the theme for Hugo that supports the [Accelerated Mobile Pages Project](
 
 ![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/taxonomy.png)
 
-## AMP suported
+## AMP supported
 
 ![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/amp-valid.png)
 
