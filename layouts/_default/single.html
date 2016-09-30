@@ -1,0 +1,23 @@
+{{ define "title" }}{{ .Title }} - {{ end }}
+
+{{ define "meta" }}
+{{ partial "single_meta.html" . }}
+{{ partial "single_json_ld.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<div class="l-container">
+  {{ .Render "summary" }}
+
+  {{ $recent_articles := (where .Site.Pages ".Source.Path" "!=" .Source.Path) }}
+  {{ if ne 0 (len $recent_articles) }}
+  <section>
+    <header>Recent articles</header>
+    <ul class="p-articles bordered">
+      {{ range $recent_articles }}<li>{{ .Render "li_sm" }}</li>{{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</div>
+
+{{ end }}
