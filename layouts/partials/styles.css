@@ -234,14 +234,14 @@ main {
 .p-crumb  {
   margin-bottom: 1.5rem;
   font-size: .8rem;
+  list-style: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .p-crumb:last-child  {
   margin-bottom: 0;
-}
-
-.p-crumb ol {
-  list-style: none;
 }
 
 .p-crumb li {
