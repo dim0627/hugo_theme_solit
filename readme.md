@@ -90,10 +90,10 @@ Recommend that you use the section than taxonomy.
 ## Image
 
 ```
-{{% img src="/images/image.jpg" w="600" h="400" %}}
-{{% img src="/images/image.jpg" w="600" h="400" class="right" %}}
-{{% img src="/images/image.jpg" w="600" h="400" class="left" %}}
-{{% img src="/images/image.jpg" w="600" h="400" caption="Referenced from wikipedia." href="https://en.wikipedia.org/wiki/Lorem_ipsum" %}}
+{{% img src="images/image.jpg" w="600" h="400" %}}
+{{% img src="images/image.jpg" w="600" h="400" class="right" %}}
+{{% img src="images/image.jpg" w="600" h="400" class="left" %}}
+{{% img src="images/image.jpg" w="600" h="400" caption="Referenced from wikipedia." href="https://en.wikipedia.org/wiki/Lorem_ipsum" %}}
 ```
 
 ![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_solit/master/images/include-images.png)
@@ -103,7 +103,7 @@ Recommend that you use the section than taxonomy.
 Break float.
 
 ```
-{{% img src="/images/image.jpg" w="600" h="400" class="right" %}}
+{{% img src="images/image.jpg" w="600" h="400" class="right" %}}
 
 brabrabra # Displayed left of the image.
 
