@@ -43,6 +43,7 @@ googleAnalytics = "UA-XXXXXXXX-XX" # Optional
 
 [params]
   contact = "contact@example.com" # Optional
+  dateformat = "Jan 2, 2006" # Optional
   # Fonts settings.
   googlefonts = "https://fonts.googleapis.com/css?family=Lobster|Lato:400,700" # Optional, Include google fonts.
   fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
