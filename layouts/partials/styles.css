@@ -11,7 +11,6 @@ html {
 body {
   font-family: Lato,'Hiragino Kaku Gothic Pro',メイリオ,Meiryo,sans-serif;
   font-size: inherit;
-  word-break: break-all;
   margin: 0;
   color: #263238;
   background-color: #eceff1;
