@@ -1,0 +1,7 @@
+<nav class="p-nav">
+    <ul>
+        {{ range $key, $value := .Site.Sections }}
+        {{ if $key }}<li><a href="{{ $.Site.BaseURL }}{{ $key | urlize }}/">{{ $key }}</a></li>{{ end }}
+        {{ end }}
+    </ul>
+</nav>
