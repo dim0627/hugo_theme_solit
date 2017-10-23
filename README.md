@@ -64,6 +64,17 @@ googleAnalytics = "UA-XXXXXXXX-XX" # Optional
 """
 ```
 
+# `config.toml` optional theme params
+
+```
+[params]
+  recents = 5 # Optional. Five is the default value that will be used if this is not set 
+```
+
+**recents** 
+
+Limits the number of recent articles to show at the end of a single post. Defaults to 5.
+
 # Frontmatter example
 
 ```
