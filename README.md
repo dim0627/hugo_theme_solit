@@ -94,6 +94,14 @@ Recommend that you use the section than taxonomy.
         └── thumbnail.png
 ```
 
+# Partials
+
+## comments.html
+
+Use this partial to configure an amp compatible commenting system like Disqus. This partial
+is rendered on single posts after the post summary but before the list of recent posts. By 
+default this partial is empty. 
+
 # Shortcodes
 
 ## Iframe
