@@ -15,7 +15,8 @@
   <section>
     <header>Recent articles</header>
     <ul class="p-articles bordered">
-      {{ range $recent_articles }}<li>{{ .Render "li_sm" }}</li>{{ end }}
+      {{ $recent_limit := .Site.Params.Recents | default 5 }}
+      {{ range first $recent_limit $recent_articles }}<li>{{ .Render "li_sm" }}</li>{{ end }}
     </ul>
   </section>
   {{ end }}
