@@ -8,6 +8,7 @@
 {{ define "main" }}
 <div class="l-container">
   {{ .Render "summary" }}
+  {{ partial "comments.html" . }}
 
   {{ $recent_articles := (where .Site.Pages ".Source.Path" "!=" .Source.Path) }}
   {{ if ne 0 (len $recent_articles) }}
