@@ -17,7 +17,7 @@
       {{ replaceRE " +" " " (replaceRE "\n" "" (partial "styles.css" .)) | safeCSS }}
       {{ replaceRE " +" " " (replaceRE "\n" "" (partial "custom.css" .)) | safeCSS }}
 
-      {{ range where .Site.Pages ".Params.thumbnail" "!=" nil }} .article-{{ .Source.Path | md5 }} .thumbnail { background-image: url({{ $.Site.BaseURL }}{{ .Params.thumbnail }});  } {{ end }}
+      {{ range where .Site.RegularPages ".Params.thumbnail" "!=" nil }} .article-{{ .Source.Path | md5 }} .thumbnail { background-image: url({{ $.Site.BaseURL }}{{ .Params.thumbnail }});  } {{ end }}
 
       {{ with .Site.Params.fontfamily }} body { font-family: {{ . | safeCSS }}; } {{ end }}
       {{ with .Site.Params.logofontfamily }} .h-logo { font-family: {{ . | safeCSS }}; } {{ end }}

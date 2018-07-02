@@ -10,7 +10,7 @@
   {{ .Render "summary" }}
   {{ partial "comments.html" . }}
 
-  {{ $recent_articles := (where .Site.Pages ".Source.Path" "!=" .Source.Path) }}
+  {{ $recent_articles := (where .Site.RegularPages ".Source.Path" "!=" .Source.Path) }}
   {{ if ne 0 (len $recent_articles) }}
   <section>
     <header>Recent articles</header>
